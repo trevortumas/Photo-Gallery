@@ -109,17 +109,19 @@ p {
 figure {
     display: flex;
     flex-flow: column;
-    padding: 5px;
+    padding: 0.5rem 2rem 0.5rem 2rem;
 }
 figcaption, label, input, small {
     font-size: 1em;
 }
 figcaption {
     text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 .fc1 {
 position: absolute;
-top: 90%;
+/* top: 90%; */
 }
 #form {
    color: #FFFFFF; 
@@ -150,4 +152,28 @@ footer {
     color: #FFFFFF;
     text-align: center;
     padding: 10px;
+}
+
+.figure-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.figure-container > img {
+    width: 100%;
+}
+
+.figure-container > figcaption {
+    position: relative;
+    bottom: 2rem;
+    height: 0;
+}
+
+figcaption.top {
+    top: 1rem;
+}
+
+figcaption.white {
+    color: white;
 }
